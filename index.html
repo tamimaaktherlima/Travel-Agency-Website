@@ -34,38 +34,48 @@
 <body class="manrope-font">
     <!-- <h1>Welcome to Tour and Travel Agency</h1> -->
     <header>
-        <nav class="">
+        <nav class="sticky top-0 z-50">
             <div class="navbar bg-base-300 shadow-sm flex justify-around p-4 ">
                 <!-- <div class="navbar-start"> -->
-                    <!-- <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                            <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
-                        </div>
-                        <ul tabindex="-1"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Homepage</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>About</a></li>
-                        </ul>
-                    </div> -->
+                <div class="dropdown md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-lg dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Book Now</a></li>
+                        <li><a href="">Package</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Review</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
                 <!-- </div> -->
+
+
                 <div class="">
                     <a class="font-bold text-4xl "><span
                             class="text-orange-500 font-extrabold text-6xl">T</span>ravel</a>
                 </div>
-                <div class="font-bold space-x-3">
-                    <a href="">Home</a>
-                    <a href="">Book Now</a>
-                    <a href="">Package</a> 
-                    <a href="">Gallery</a>
-                    <a href="">Services</a>
-                    <a href="">Review</a>
-                    <a href="">Contact</a>
+
+
+                <div class="hidden font-semibold space-x-3 list-none md:flex  ">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Book Now</a></li>
+                    <li><a href="">Package</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Review</a></li>
+                    <li><a href="">Contact</a></li>
                 </div>
+
+
                 <div class="text-3xl space-x-5">
                     <!-- <button class="btn btn-ghost btn-circle">
                         <svg aria-label="Search" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
@@ -84,8 +94,8 @@
                             <span class="badge badge-xs badge-primary indicator-item"></span>
                         </div>
                     </button> -->
-                    <i class="fa-solid fa-circle-user"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href=""><i class="fa-solid fa-circle-user"></i></a>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
             </div>
         </nav>
