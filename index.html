@@ -27,7 +27,8 @@
             font-weight: normal;
             font-style: normal;
         }
-        .list:hover{
+
+        .list:hover {
             /* transition: scale(110); */
             font-size: 16px;
             background-color: rgb(50, 131, 238);
@@ -35,7 +36,8 @@
             color: white;
             border-radius: 5px;
             transition-duration: 2ms;
-            box-shadow: 5px 5px 10px 2px rgba(24, 24, 24, 0.3);;
+            box-shadow: 5px 5px 10px 2px rgba(24, 24, 24, 0.3);
+            ;
         }
     </style>
 
@@ -43,7 +45,7 @@
 
 <body class="manrope-font">
     <!-- <h1>Welcome to Tour and Travel Agency</h1> -->
-    <header>
+    <header class="header">
         <nav class="sticky top-0 z-50">
             <div class="navbar bg-base-300 shadow-sm flex justify-around p-4 ">
                 <!-- <div class="navbar-start"> -->
@@ -76,7 +78,7 @@
 
 
                 <div class="hidden font-semibold space-x-5 list-none  md:flex  ">
-                    <li class="list"><a href="" >Home</a></li>
+                    <li class="list"><a href="">Home</a></li>
                     <li class="list"><a href="">Book Now</a></li>
                     <li class="list"><a href="">Package</a></li>
                     <li class="list"><a href="">Gallery</a></li>
@@ -86,7 +88,7 @@
                 </div>
 
 
-                <div class="text-3xl space-x-5">
+                <div class="text-3xl space-x-1 md:space-x-5">
                     <!-- <button class="btn btn-ghost btn-circle">
                         <svg aria-label="Search" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
@@ -113,9 +115,48 @@
 
         <!-- Banner section -->
         <div class="banner">
-
+            <div class="hero min-h-screen"
+                style="background-image: url(/assets/images/banner.jpg);">
+                <div class="hero-overlay"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                        <p class="mb-5">
+                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </header>
+
+    <main>
+        <section>
+            <!-- <h1>Book Now</h1> -->
+        </section>
+
+    </main>
+
+    <!-- <script>
+        const videos = document.querySelectorAll("video");
+
+        videos.forEach(video => {
+            video.addEventListener("play", () => {
+
+                videos.forEach(otherVideo => {
+                    if (otherVideo !== video) {
+                        otherVideo.pause();
+                        otherVideo.currentTime = 0;
+                    }
+                });
+
+            });
+        });
+    </script> -->
 </body>
 
 </html>
