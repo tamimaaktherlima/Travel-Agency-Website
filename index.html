@@ -39,6 +39,19 @@
             box-shadow: 5px 5px 10px 2px rgba(24, 24, 24, 0.3);
             ;
         }
+
+        .heading span {
+            /* color: rgb(223, 135, 12); */
+            color: rgb(200, 151, 45);
+            background: rgba(207, 128, 18, 0.347);
+            padding: 4px 8px;
+            border-radius: .5rem;
+
+        }
+
+        /* .heading span .space{
+            background: none;
+        } */
     </style>
 
 </head>
@@ -125,22 +138,54 @@
                             and live a new
                             and full life</h1>
                         <p class="mb-5">
-                            Travel has become an essential part of modern life. Over the years, the travel agency industry in Bangladesh has grown significantly, supporting tourism, business travel, and religious journeys.
+                            Travel has become an essential part of modern life. Over the years, the travel agency
+                            industry in Bangladesh has grown significantly, supporting tourism, business travel, and
+                            religious journeys.
                         </p>
-                        <!-- <button class="btn btn-primary">Get Started</button> -->
+                        <button class="btn btn-primary">Get Started</button>
                     </div>
                 </div>
             </div>
         </div>
 
-
     </header>
 
-    <main>
-        <section>
-            <!-- <h1>Book Now</h1> -->
+    <main class="md:container mx-auto">
+        <!-- Book Now section start -->
+        <section class="my-16">
+            <div>
+                <h1 class="heading text-center font-bold text-2xl">
+                    <span>B</span>
+                    <span>O</span>
+                    <span>O</span>
+                    <span>K</span>
+                    <span>N</span>
+                    <span>O</span>
+                    <span>W</span>
+                </h1>
+            </div>
+            <div class="hero min-h-screen">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img alt="Tailwind CSS hero component" src="assets/images/bookNow.jpg" class="max-w-xl" />
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
+                                <label class="label font-extrabold">Where to</label>
+                                <input type="text" class="input" placeholder="place name" />
+                                <label class="label font-extrabold">How Many</label>
+                                <input type="number" class="input" min="0" max="100" placeholder="number of guests" />
+                                <label class="label font-extrabold">Arrivals</label>
+                                <input type="date" class="input" />
+                                <label class="label font-extrabold">Leaving</label>
+                                <input type="date" class="input" />
+                                <button class="btn btn-neutral mt-4">Book Now</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
+        <!-- end -->
     </main>
 
     <!-- <script>
