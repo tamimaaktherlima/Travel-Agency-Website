@@ -58,7 +58,7 @@
 
 <body class="manrope-font">
     <!-- <h1>Welcome to Tour and Travel Agency</h1> -->
-    <header class="header mb-16">
+    <main class="header mb-16">
         <nav class="sticky top-0 z-50">
             <div class="navbar bg-base-300 shadow-sm flex justify-around p-4 ">
                 <!-- <div class="navbar-start"> -->
@@ -127,7 +127,7 @@
         </nav>
 
         <!-- Banner section -->
-        <div class="banner">
+        <div class="banner md:container mx-auto">
             <div class="hero min-h-screen" style="background-image: url(/assets/images/banner.jpg);">
                 <div class="hero-overlay"></div>
                 <div class="hero-content text-neutral-content text-center">
@@ -148,11 +148,11 @@
             </div>
         </div>
 
-    </header>
 
-    <main class="md:container mx-auto">
+
+        <!-- <main class="md:container mx-auto"> -->
         <!-- Book Now section start -->
-        <section class="">
+        <section class="md:container mx-auto">
             <div>
                 <h1 class="heading text-center font-bold text-4xl">
                     <span>B</span>
@@ -166,7 +166,8 @@
             </div>
             <div class="hero min-h-screen">
                 <div class="hero-content grid grid-cols-1 md:grid-cols-2">
-                    <img alt="Tailwind CSS hero component" src="assets/images/bookNow.jpg" class="max-w-sm md:max-w-xl" />
+                    <img alt="Tailwind CSS hero component" src="assets/images/bookNow.jpg"
+                        class="max-w-sm md:max-w-xl" />
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <fieldset class="fieldset">
@@ -188,9 +189,258 @@
         <!-- end -->
 
         <!-- Packages Section -->
-         <section>
+        <section class="packages my-16 md:container mx-auto">
+            <div>
+                <h1 class="heading text-center font-bold text-4xl">
+                    <span>P</span>
+                    <span>A</span>
+                    <span>C</span>
+                    <span>K</span>
+                    <span>A</span>
+                    <span>G</span>
+                    <span>E</span>
+                    <span>S</span>
+                </h1>
+            </div>
 
-         </section>
+            <div class="card-actions justify-end">
+                <p><a href="">See More</a></p>
+            </div>
+            <!-- Card container -->
+            <div class="card-container mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Card 1 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <figure>
+                        <img src="assets/images/maldives.jpg" alt="Shoes" class="max-h-72 w-full" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-orange-400"></i>
+                            <h2 class="card-title text-xl font-extrabold">Maldives</h2>
+                        </div>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-xl">$90.00</p>
+                            <del>$120.00</del>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary font-bold">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <figure>
+                        <img src="assets/images/paris.jpg" alt="Shoes" class="max-h-72 w-full" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-orange-400"></i>
+                            <h2 class="card-title text-xl font-extrabold">Paris</h2>
+                        </div>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-xl">$90.00</p>
+                            <del>$120.00</del>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary font-bold">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <figure>
+                        <img src="assets/images/switzerland.jpg" alt="Shoes" class="max-h-72 w-full" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-orange-400"></i>
+                            <h2 class="card-title text-xl font-extrabold">Switzerland</h2>
+                        </div>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-xl">$90.00</p>
+                            <del>$120.00</del>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary font-bold">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="assets/images/thailand.jpg" alt="Shoes" class="max-h-72 w-full" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-orange-400"></i>
+                            <h2 class="card-title text-xl font-extrabold">Thailand</h2>
+                        </div>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-xl">$90.00</p>
+                            <del>$120.00</del>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary font-bold">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <figure>
+                        <img src="assets/images/taj_mahal.jpg" alt="Shoes" class="max-h-72 w-full" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-orange-400"></i>
+                            <h2 class="card-title text-xl font-extrabold">Taj Mahal</h2>
+                        </div>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-xl">$90.00</p>
+                            <del>$120.00</del>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary font-bold">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <figure>
+                        <img src="assets/images/tokyo.jpg" alt="Shoes" class="max-h-72 w-full" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-orange-400"></i>
+                            <h2 class="card-title text-xl font-extrabold">Tokyo</h2>
+                        </div>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-xl">$90.00</p>
+                            <del>$120.00</del>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary font-bold">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <figure>
+                        <img src="assets/images/pyramid.jpg" alt="Shoes" class="max-h-72 w-full" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-orange-400"></i>
+                            <h2 class="card-title text-xl font-extrabold">Pyramid</h2>
+                        </div>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-xl">$90.00</p>
+                            <del>$120.00</del>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary font-bold">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 8 -->
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="assets/images/malaysia.jpg" alt="Shoes" class="max-h-72 w-full" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-orange-400"></i>
+                            <h2 class="card-title text-xl font-extrabold">Malaysia</h2>
+                        </div>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-xl">$90.00</p>
+                            <del>$120.00</del>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary font-bold">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- <script>
