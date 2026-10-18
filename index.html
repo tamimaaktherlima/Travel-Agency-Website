@@ -58,6 +58,9 @@
         /* .heading span .space{
             background: none;
         } */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 
 </head>
@@ -65,7 +68,7 @@
 <body class="manrope-font">
     <!-- <h1>Welcome to Tour and Travel Agency</h1> -->
     <main class="main">
-        <nav class="sticky top-0 z-50">
+        <nav class="sticky top-0 z-50 ">
             <div class="navbar bg-base-300 shadow-sm flex justify-around p-4 ">
                 <!-- <div class="navbar-start"> -->
                 <div class="dropdown md:hidden">
@@ -78,12 +81,12 @@
                     </div>
                     <ul tabindex="-1"
                         class="menu menu-lg dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Package</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Review</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Package</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Review</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="">Book Now</a></li>
                     </ul>
                 </div>
@@ -97,12 +100,12 @@
 
 
                 <div class="hidden font-semibold space-x-5 list-none  md:flex  ">
-                    <li class="list"><a href="">Home</a></li>
-                    <li class="list"><a href="">Package</a></li>
-                    <li class="list"><a href="">Services</a></li>
-                    <li class="list"><a href="">Gallery</a></li>
-                    <li class="list"><a href="">Review</a></li>
-                    <li class="list"><a href="">Contact</a></li>
+                    <li class="list"><a href="#home">Home</a></li>
+                    <li class="list"><a href="#packages">Package</a></li>
+                    <li class="list"><a href="#services">Services</a></li>
+                    <li class="list"><a href="#gallery">Gallery</a></li>
+                    <li class="list"><a href="#reviews">Review</a></li>
+                    <li class="list"><a href="#contact">Contact</a></li>
                     <li class="list"><a href="">Book Now</a></li>
                 </div>
 
@@ -151,7 +154,7 @@
         </nav>
 
         <!-- Banner section -->
-        <div class="banner md:container mx-auto mb-24">
+        <div id="home" class="banner mb-24 scroll-mt-24">
             <div class="hero min-h-screen" style="background-image: url(/assets/images/banner.jpg);">
                 <div class="hero-overlay"></div>
                 <div class="hero-content text-neutral-content text-center">
@@ -180,10 +183,8 @@
             </div>
         </div>
 
-        <!-- <main class="md:container mx-auto"> -->
-
         <!-- Packages Section -->
-        <section class="packages mb-24 md:container mx-auto">
+        <section id="packages" class="packages mb-24 md:container mx-auto scroll-mt-24">
             <div>
                 <h1 class="heading text-center font-bold text-4xl">
                     <span>P</span>
@@ -295,7 +296,7 @@
         <!-- end -->
 
         <!-- Services section -->
-        <section class="services md:container mx-auto mb-24">
+        <section id="services" class="services md:container mx-auto mb-24 scroll-mt-24">
 
             <div>
                 <h1 class="heading text-center font-bold text-4xl">
@@ -401,7 +402,7 @@
         <!-- end -->
 
         <!-- Gallery Section -->
-        <section class="gallery md:container mx-auto mb-24">
+        <section id="gallery" class="gallery md:container mx-auto mb-24 scroll-mt-24">
             <div>
                 <h1 class="heading text-center font-bold text-4xl">
                     <span>G</span>
@@ -632,7 +633,7 @@
 
 
         <!-- Review Section -->
-        <section class="reviews md:container mx-auto mb-24">
+        <section id="reviews" class="reviews md:container mx-auto mb-24 scroll-mt-24">
             <div>
                 <h1 class="heading text-center font-bold text-4xl">
                     <span>R</span>
@@ -714,7 +715,7 @@
         <!-- end -->
 
         <!-- contact section -->
-        <section class="md:container mx-auto mb-16 space-y-6">
+        <section id="contact" class="md:container mx-auto mb-16 space-y-6 scroll-mt-24">
             <div>
                 <h1 class="heading text-center font-bold text-4xl">
                     <span>C</span>
@@ -837,7 +838,7 @@
                 <a class="link link-hover">Jobs</a>
                 <a class="link link-hover">Press kit</a>
             </nav>
-            
+
             <nav>
                 <h6 class="footer-title">Branches Location</h6>
                 <a class="link link-hover">Dhaka, Bangladesh</a>
