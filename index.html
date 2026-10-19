@@ -61,6 +61,19 @@
         html {
             scroll-behavior: smooth;
         }
+        .package-img{
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .card{
+            transition:transform .25s ease,
+            box-shadow .25s ease ;
+        }
+        .card:hover{
+            transform: translateY(-6px);
+        }
     </style>
 
 </head>
@@ -69,7 +82,7 @@
     <!-- <h1>Welcome to Tour and Travel Agency</h1> -->
     <main class="main">
         <nav class="sticky top-0 z-50 ">
-            <div class="navbar bg-base-300 shadow-sm flex justify-around p-4 ">
+            <div class="navbar mx-auto bg-base-300 shadow-sm flex justify-around p-4 ">
                 <!-- <div class="navbar-start"> -->
                 <div class="dropdown md:hidden">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -159,7 +172,7 @@
                 <div class="hero-overlay"></div>
                 <div class="hero-content text-neutral-content text-center">
                     <div class="md:max-w-xl">
-                        <h1 class="mb-2 text-sm font-bold text-red-400 tracking-widest space-x-2">Best Destinations
+                        <h1 class="mb-2 text-sm font-bold text-red-400 uppercase space-x-2 tracking-[.2em]">Best Destinations
                             around the world</h1>
                         <h1 class="mb-5 text-5xl font-bold ">Travel, enjoy
                             and live a new
@@ -201,7 +214,7 @@
             </div>
 
             <div class="card-actions justify-end">
-                <p><a href="" class="text-md text-blue-700 underline">See more</a></p>
+                <button id="package-see-more"><a  href="packages.html" class="text-md text-blue-700 underline">See more</a></button>
             </div>
 
             <!-- Card container -->
@@ -209,7 +222,8 @@
                 <!-- Card 1 -->
                 <div class="card bg-base-100 shadow-sm   ">
                     <figure>
-                        <img src="assets/images/maldives.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <!-- <img src="assets/images/maldives.jpg" alt="Shoes" class="max-h-72 w-full pack-img" /> -->
+                        <img src="assets/images/maldives.jpg" alt="Shoes" class=" package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -230,7 +244,7 @@
                             <del>$120.00</del>
                         </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary font-bold">Buy Now</button>
+                            <button id="package1" class="btn btn-primary font-bold">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -238,7 +252,7 @@
                 <!-- card 2 -->
                 <div class="card bg-base-100 shadow-sm">
                     <figure>
-                        <img src="assets/images/paris.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/paris.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -267,7 +281,7 @@
                 <!-- Card 3 -->
                 <div class="card bg-base-100 shadow-sm">
                     <figure>
-                        <img src="assets/images/switzerland.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/switzerland.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -649,7 +663,7 @@
             </div>
             <div class="review-container grid grid-cols-1 md:grid-cols-3 mt-16 gap-6 ">
                 <!-- review 1 -->
-                <div class="review shadow-xl p-6 space-y-6">
+                <div class="review card shadow-xl p-6 space-y-6">
                     <!-- image -->
                     <div class="flex justify-center">
                         <img src="assets/images/review1.jpg" alt="" class="rounded-full w-40 h-40">
@@ -670,7 +684,7 @@
                 </div>
 
                 <!-- review 2 -->
-                <div class="review shadow-xl p-6 space-y-6">
+                <div class="review card shadow-xl p-6 space-y-6">
                     <!-- image -->
                     <div class="flex justify-center">
                         <img src="assets/images/review2.jpg" alt="" class="rounded-full w-40 h-40">
@@ -691,7 +705,7 @@
                 </div>
 
                 <!-- review 3 -->
-                <div class="review shadow-xl p-6 space-y-6">
+                <div class="review card shadow-xl p-6 space-y-6">
                     <!-- image -->
                     <div class="flex justify-center">
                         <img src="assets/images/review3.jpg" alt="" class="rounded-full w-40 h-40">
@@ -812,11 +826,30 @@
         <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box">
-                <h3 class="text-lg font-bold">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="hero ">
+                    <div class="hero-content">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="">
+                                    <label class="label font-extrabold">Where to</label>
+                                    <input type="text" class="input" placeholder="place name" />
+                                    <label class="label font-extrabold">How Many</label>
+                                    <input type="number" class="input" min="0" max="100"
+                                        placeholder="number of guests" />
+                                    <label class="label font-extrabold">Arrivals</label>
+                                    <input type="date" class="input" />
+                                    <label class="label font-extrabold">Leaving</label>
+                                    <input type="date" class="input" />
+                                    <div class="flex justify-center">
+                                        <button class="btn btn-neutral mt-4">Book Now</button>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="modal-action">
                     <form method="dialog">
-                        <!-- if there is a button in form, it will close the modal -->
                         <button class="btn">Close</button>
                     </form>
                 </div>
@@ -897,6 +930,8 @@
             });
         });
     </script> -->
+
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

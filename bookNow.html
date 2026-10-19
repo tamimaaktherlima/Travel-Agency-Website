@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Now | Travel Agency</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5"
+        rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background:
+                linear-gradient(
+                    135deg,
+                    #fce7f3,
+                    #dbeafe,
+                    #ede9fe,
+                    #cffafe
+                );
+            background-size: 400% 400%;
+            /* animation: gradientMove 12s ease infinite; */
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            } 
+         } 
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50">
+        <div class="navbar bg-white/70 backdrop-blur-md shadow-sm px-6">
+
+            <div class="flex-1">
+                <a href="index.html"
+                    class="text-3xl font-extrabold">
+                    <span class="text-orange-500 text-5xl">T</span>ravel
+                </a>
+            </div>
+
+            <div>
+                <a href="index.html"
+                    class="btn btn-primary text-white">
+                    Home
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Book Now Section -->
+    <main class="min-h-screen flex items-center justify-center px-5 py-16">
+
+        <div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2
+                    gap-10 items-center">
+
+            <!-- Left Content -->
+            <div class="text-center md:text-left">
+
+                <p class="text-orange-500 font-bold uppercase tracking-widest">
+                    Start Your Journey
+                </p>
+
+                <h1 class="text-5xl md:text-6xl font-extrabold mt-4 text-gray-800">
+                    Book Your
+                    <span class="text-orange-500">
+                        Dream Trip
+                    </span>
+                </h1>
+
+                <p class="mt-5 text-gray-600 max-w-lg">
+                    Plan your next adventure with us. Choose your destination,
+                    travel date and number of guests to start your journey.
+                </p>
+
+            </div>
+
+
+            <!-- Booking Form -->
+            <div class="bg-white/70 backdrop-blur-xl
+                        border border-white/50
+                        rounded-3xl shadow-2xl p-8">
+
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                    Book Now
+                </h2>
+
+                <form class="space-y-5">
+
+                    <!-- Destination -->
+                    <div>
+                        <label class="label font-bold">
+                            Destination
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Where do you want to go?"
+                            class="input input-bordered w-full bg-white/80"
+                        >
+                    </div>
+
+
+                    <!-- Guests -->
+                    <div>
+                        <label class="label font-bold">
+                            Number of Guests
+                        </label>
+
+                        <input
+                            type="number"
+                            min="1"
+                            placeholder="Number of guests"
+                            class="input input-bordered w-full bg-white/80"
+                        >
+                    </div>
+
+
+                    <!-- Arrival -->
+                    <div>
+                        <label class="label font-bold">
+                            Arrival Date
+                        </label>
+
+                        <input
+                            type="date"
+                            class="input input-bordered w-full bg-white/80"
+                        >
+                    </div>
+
+
+                    <!-- Leaving -->
+                    <div>
+                        <label class="label font-bold">
+                            Leaving Date
+                        </label>
+
+                        <input
+                            type="date"
+                            class="input input-bordered w-full bg-white/80"
+                        >
+                    </div>
+
+
+                    <!-- Button -->
+                    <button
+                        type="submit"
+                        class="btn btn-primary w-full text-lg">
+                        Book Your Trip
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

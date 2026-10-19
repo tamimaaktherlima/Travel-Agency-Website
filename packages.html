@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Package</title>
+    <title>Packages | Travel Agency</title>
 
     <!-- DaisyUI + Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -49,14 +49,29 @@
 
         }
 
+        .card {
+            transition: transform .25s ease,
+                box-shadow .25s ease;
+        }
+
         .card:hover {
+            transform: translateY(-15px);
             box-shadow: 5px 5px 10px 2px rgba(24, 24, 24, 0.3);
 
         }
 
-        /* .heading span .space{
-            background: none;
-        } */
+        .package-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-panel {
+            background:
+                linear-gradient(115deg, rgba(15, 23, 42, .84), rgba(67, 56, 202, .60)),
+                url("assets/images/banner.jpg") center/cover;
+        }
     </style>
 
 </head>
@@ -64,9 +79,9 @@
 <body class="manrope-font">
     <!-- <h1>Welcome to Tour and Travel Agency</h1> -->
     <main class="main">
-        <nav class="sticky top-0 z-50">
-            <div class="navbar bg-base-300 shadow-sm flex justify-around p-4 ">
-                <!-- <div class="navbar-start"> -->
+        <nav class="sticky top-0 z-50 ">
+            <div class="navbar bg-base-300 shadow-sm p-4 flex justify-around ">
+                <!-- <div class="sm:navbar-end"> -->
                 <div class="dropdown md:hidden">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                         <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none"
@@ -77,81 +92,82 @@
                     </div>
                     <ul tabindex="-1"
                         class="menu menu-lg dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a href="">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="">Package</a></li>
                         <li><a href="">Services</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Review</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="">Book Now</a></li>
                     </ul>
                 </div>
                 <!-- </div> -->
 
 
                 <div class="">
-                    <a class="font-bold text-4xl "><span
-                            class="text-orange-500 font-extrabold text-6xl">T</span>ravel</a>
+                    <a href="index.html" class="font-bold text-4xl "><span
+                            class="text-orange-500 font-extrabold text-6xl">
+                            T</span>ravel
+                    </a>
                 </div>
 
 
                 <div class="hidden font-semibold space-x-5 list-none  md:flex  ">
-                    <li class="list"><a href="">Home</a></li>
-                    <li class="list"><a href="">Book Now</a></li>
-                    <li class="list"><a href="">Package</a></li>
-                    <li class="list"><a href="">Gallery</a></li>
+                    <li class="list"><a href="index.html">Home</a></li>
                     <li class="list"><a href="">Services</a></li>
-                    <li class="list"><a href="">Review</a></li>
                     <li class="list"><a href="">Contact</a></li>
-                </div>
-
-
-                <div class="text-3xl space-x-1 md:space-x-5">
-                    <!-- <button class="btn btn-ghost btn-circle">
-                        <svg aria-label="Search" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </button>
-                    <button class="btn btn-ghost btn-circle">
-                        <div class="indicator">
-                            <svg aria-label="Notifications" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                            </svg>
-                            <span class="badge badge-xs badge-primary indicator-item"></span>
-                        </div>
-                    </button> -->
-                    <a href=""><i class="fa-solid fa-circle-user"></i></a>
-                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="" class="text-4xl"><i class="fa-solid fa-toggle-off"></i></a>
                 </div>
             </div>
         </nav>
 
+        <!-- hero section -->
+        <section class="px-4 pt-8 sm:px-6 lg:px-8">
+            <div
+                class="hero-panel mx-auto flex min-h-[360px] max-w-7xl items-center overflow-hidden rounded-[2rem] px-6 py-14 text-white shadow-2xl sm:px-12 lg:px-16">
+
+                <div class="max-w-2xl">
+
+                    <p
+                        class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-bold backdrop-blur">
+                        <i class="fa-solid fa-earth-americas text-amber-300"></i>
+                        FIND YOUR NEXT ADVENTURE
+                    </p>
+
+                    <h1 class="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
+                        Find a trip that feels like
+                        <span class="text-amber-300">you.</span>
+                    </h1>
+
+                    <p class="mt-5 max-w-xl text-base leading-7 text-white/85 sm:text-lg">
+                        Explore hand-picked destinations, compare travel styles, and
+                        discover a package for your next unforgettable journey.
+                    </p>
+
+                    <a href="#packages" class="btn mt-7 border-0 bg-amber-300 text-slate-900 hover:bg-amber-200">
+                        Explore Packages
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
         <!-- Packages section -->
         <section class="packages my-16 md:container mx-auto">
-            <div>
-                <h1 class="heading text-center font-bold text-4xl">
-                    <span>P</span>
-                    <span>A</span>
-                    <span>C</span>
-                    <span>K</span>
-                    <span>A</span>
-                    <span>G</span>
-                    <span>E</span>
-                    <span>S</span>
+            <div class="space-y-2 text-center">
+                <h3 class="text-orange-600 uppercase tracking-[.2em] text-center font-bold">Made for your kind of travel
+                </h3>
+                <h1 class="text-center font-bold text-4xl text-slate-700">
+                    Explore Our Packages
                 </h1>
+                <p class="text-slate-500 text-center ">From peaceful beaches to mountain escapes, choose a trip that
+                    matches your mood and budget.</p>
             </div>
 
             <!-- Card container -->
             <div class="card-container mt-12 grid grid-cols-1 md:grid-cols-3  gap-6">
                 <!-- Card 1 -->
-                <div class="card bg-base-100 shadow-sm   ">
+                <div class="card bg-base-100 shadow-sm  package ">
                     <figure>
-                        <img src="assets/images/maldives.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/maldives.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -178,9 +194,9 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="card bg-base-100 shadow-sm">
+                <div class="card bg-base-100 shadow-sm package">
                     <figure>
-                        <img src="assets/images/paris.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/paris.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -207,9 +223,9 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="card bg-base-100 shadow-sm">
+                <div class="card bg-base-100 shadow-sm package">
                     <figure>
-                        <img src="assets/images/switzerland.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/switzerland.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -236,9 +252,9 @@
                 </div>
 
                 <!-- card 4 -->
-                <div class="card bg-base-100  shadow-sm">
+                <div class="card bg-base-100  shadow-sm package">
                     <figure>
-                        <img src="assets/images/thailand.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/thailand.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -265,9 +281,9 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div class="card bg-base-100 shadow-sm">
+                <div class="card bg-base-100 shadow-sm package">
                     <figure>
-                        <img src="assets/images/taj_mahal.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/taj_mahal.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -294,9 +310,9 @@
                 </div>
 
                 <!-- Card 6 -->
-                <div class="card bg-base-100 shadow-sm">
+                <div class="card bg-base-100 shadow-smpackage">
                     <figure>
-                        <img src="assets/images/tokyo.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/tokyo.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -325,7 +341,7 @@
                 <!-- Card 7 -->
                 <div class="card bg-base-100 shadow-sm">
                     <figure>
-                        <img src="assets/images/pyramid.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/pyramid.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -354,7 +370,7 @@
                 <!-- card 8 -->
                 <div class="card bg-base-100  shadow-sm">
                     <figure>
-                        <img src="assets/images/malaysia.jpg" alt="Shoes" class="max-h-72 w-full" />
+                        <img src="assets/images/malaysia.jpg" alt="Shoes" class="package-img" />
                     </figure>
                     <div class="card-body">
                         <div class="flex items-center gap-1">
@@ -474,6 +490,8 @@
             </nav>
         </footer>
     </main>
+
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
