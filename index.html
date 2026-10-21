@@ -61,17 +61,20 @@
         html {
             scroll-behavior: smooth;
         }
-        .package-img{
+
+        .package-img {
             height: 220px;
             width: 100%;
             object-fit: cover;
             display: block;
         }
-        .card{
-            transition:transform .25s ease,
-            box-shadow .25s ease ;
+
+        .card {
+            transition: transform .25s ease,
+                box-shadow .25s ease;
         }
-        .card:hover{
+
+        .card:hover {
             transform: translateY(-6px);
         }
     </style>
@@ -170,7 +173,8 @@
                 <div class="hero-overlay"></div>
                 <div class="hero-content text-neutral-content text-center">
                     <div class="md:max-w-xl">
-                        <h1 class="mb-2 text-sm font-bold text-red-400 uppercase space-x-2 tracking-[.2em]">Best Destinations
+                        <h1 class="mb-2 text-sm font-bold text-red-400 uppercase space-x-2 tracking-[.2em]">Best
+                            Destinations
                             around the world</h1>
                         <h1 class="mb-5 text-5xl font-bold ">Travel, enjoy
                             and live a new
@@ -212,7 +216,8 @@
             </div>
 
             <div class="card-actions justify-end">
-                <button id="package-see-more"><a  href="packages.html" class="text-md text-blue-700 underline">See more</a></button>
+                <button id="package-see-more"><a href="packages.html" class="text-md text-blue-700 underline">See
+                        more</a></button>
             </div>
 
             <!-- Card container -->
@@ -242,7 +247,8 @@
                             <del>$120.00</del>
                         </div>
                         <div class="card-actions justify-end">
-                            <button id="package1" class="btn btn-primary font-bold"><a href="bookNow.html">Buy Now</a></button>
+                            <button id="package1" class="btn btn-primary font-bold"><a href="bookNow.html">Buy
+                                    Now</a></button>
                         </div>
                     </div>
                 </div>
@@ -271,7 +277,8 @@
                             <del>$120.00</del>
                         </div>
                         <div class="card-actions justify-end">
-                            <button id="package2" class="btn btn-primary font-bold"><a href="bookNow.html">Buy Now</a></button>
+                            <button id="package2" class="btn btn-primary font-bold"><a href="bookNow.html">Buy
+                                    Now</a></button>
                         </div>
                     </div>
                 </div>
@@ -300,7 +307,8 @@
                             <del>$120.00</del>
                         </div>
                         <div class="card-actions justify-end">
-                            <button id="package3" class="btn btn-primary font-bold"><a href="bookNow.html">Buy Now</a></button>
+                            <button id="package3" class="btn btn-primary font-bold"><a href="bookNow.html">Buy
+                                    Now</a></button>
                         </div>
                     </div>
                 </div>
@@ -751,15 +759,16 @@
                         <div class="p-6">
                             <fieldset class="space-y-2">
                                 <input type="text" class="w-full p-2 rounded-lg border-gray-300 shadow-sm"
-                                    placeholder="Your Name" />
+                                    placeholder="Your Name" required />
                                 <input type="email" class="w-full p-2 rounded-lg border-gray-300 shadow-sm"
-                                    placeholder="Your Email" />
+                                    placeholder="Your Email" required />
                                 <input type="text" class="w-full p-2 rounded-lg border-gray-300 shadow-sm"
-                                    placeholder="Phone Number" />
+                                    placeholder="Phone Number" required/>
                                 <textarea name="" id="" cols="30" rows="3"
                                     class="w-full p-2 rounded-lg border-gray-300 shadow-sm"
-                                    placeholder="Write here"></textarea>
-                                <button class="btn btn-warning mt-2 w-full shadow-sm">Send Message</button>
+                                    placeholder="Write here" required></textarea>
+                                <button id="send-message-btn" class="btn btn-warning mt-2 w-full shadow-sm">Send
+                                    Message</button>
                             </fieldset>
                         </div>
                     </div>
@@ -821,7 +830,6 @@
 
         <!-- popup model -->
         <!-- Open the modal using ID.showModal() method -->
-        <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box">
                 <div class="hero ">
@@ -854,6 +862,20 @@
             </div>
         </dialog>
         <!-- end -->
+
+        <!-- Send Message Popup -->
+        <dialog id="send_message" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="text-3xl font-bold text-center text-orange-500">Thanks for Joining with us!</h3>
+                <p class="py-4 text-center">We received your message</p>
+                <div class="modal-action">
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+        </dialog>
 
         <!-- footer -->
         <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
